@@ -58,7 +58,7 @@ public class Account {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
         Account account = (Account) o;
-        return Objects.equals(balance, account.balance) && Objects.equals(iban, account.iban) && Objects.equals(createdAt, account.createdAt) && Objects.equals(historyActions, account.historyActions);
+        return Objects.equals(iban, account.iban);
     }
 
     @Override
